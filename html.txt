@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawan Gupta Tea Stall | Fresh Chai</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+:root{
+--primary:#3e2723;
+--accent:#ff9800;
+--light:#fff8e1;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--light);
+color:#333;
+}
+
+/* Header */
+header{
+background:linear-gradient(45deg,#3e2723,#5d4037);
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+/* Hero */
+.hero{
+height:75vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1511920170033-f8396924c348');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:42px;
+animation:fadeIn 2s ease;
+}
+
+.hero p{
+font-size:20px;
+margin:15px 0;
+}
+
+.btn{
+background:var(--accent);
+padding:12px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ff5722;
+transform:scale(1.1);
+}
+
+/* Sections */
+section{
+padding:60px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+color:var(--primary);
+}
+
+/* Menu */
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.menu-item{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.menu-item:hover{
+transform:translateY(-10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.price{
+color:var(--accent);
+font-size:18px;
+font-weight:bold;
+margin-top:10px;
+}
+
+/* Order Form */
+.order-box{
+background:white;
+padding:30px;
+border-radius:15px;
+max-width:600px;
+margin:auto;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+background:var(--accent);
+color:white;
+padding:12px;
+border:none;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff5722;
+}
+
+/* Contact */
+.contact{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:50px 10%;
+}
+
+/* WhatsApp Float */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer{
+background:#2e1a17;
+color:#ccc;
+text-align:center;
+padding:15px;
+}
+
+/* Animation */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">☕ Pawan Gupta Tea Stall</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1>Fresh & Garma Garam Chai</h1>
+<p>Near Makronia Railway Station</p>
+<a href="#order" class="btn">Order Now</a>
+</section>
+
+<section id="menu">
+<h2 class="section-title">Our Special Menu</h2>
+<div class="menu-grid">
+<div class="menu-item">
+<h3>Masala Chai</h3>
+<p>Fresh hot tea with spices</p>
+<div class="price">₹10 / ₹15</div>
+</div>
+<div class="menu-item">
+<h3>Biscuits</h3>
+<p>Crispy & tasty</p>
+<div class="price">₹10</div>
+</div>
+<div class="menu-item">
+<h3>Namkeen</h3>
+<p>Crunchy snacks</p>
+<div class="price">₹20</div>
+</div>
+<div class="menu-item">
+<h3>Special Combo</h3>
+<p>Chai + Snacks</p>
+<div class="price">₹25</div>
+</div>
+</div>
+</section>
+
+<section id="order">
+<h2 class="section-title">Parcel Order</h2>
+<div class="order-box">
+<form onsubmit="sendWhatsApp(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="mobile" placeholder="Mobile Number" required>
+<select id="item" required>
+<option value="">Select Item</option>
+<option>Masala Chai Small ₹10</option>
+<option>Masala Chai Large ₹15</option>
+<option>Biscuits ₹10</option>
+<option>Namkeen ₹20</option>
+<option>Special Combo ₹25</option>
+</select>
+<textarea id="location" placeholder="Delivery Location" required></textarea>
+<button type="submit">Order via WhatsApp</button>
+</form>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p><i class="fas fa-map-marker-alt"></i> Near Makronia Railway Station</p>
+<p><i class="fas fa-phone"></i> +91 6267839558</p>
+<p><i class="fas fa-clock"></i> Open Daily 6 AM - 10 PM</p>
+</section>
+
+<a href="https://wa.me/916267839558" class="whatsapp" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<footer>
+© 2026 Pawan Gupta Tea Stall | Serving Happiness in Every Cup ☕
+</footer>
+
+<script>
+function sendWhatsApp(e){
+e.preventDefault();
+var name=document.getElementById("name").value;
+var mobile=document.getElementById("mobile").value;
+var item=document.getElementById("item").value;
+var location=document.getElementById("location").value;
+
+var message="Hello Pawan Gupta Tea Stall,%0A%0A"
++"Name: "+name+"%0A"
++"Mobile: "+mobile+"%0A"
++"Item: "+item+"%0A"
++"Delivery Location: "+location;
+
+window.open("https://wa.me/916267839558?text="+message,"_blank");
+}
+</script>
+
+</body>
+</html>
